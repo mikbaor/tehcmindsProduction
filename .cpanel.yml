@@ -1,5 +1,5 @@
 ---
-deployments:
-  - destination: "public_html/"
-    repo: "mikbaor/produccionweb"
-    branch: "main"
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/techmind/public_html/
+    - /bin/cp -R index.html style.css $DEPLOYPATH
