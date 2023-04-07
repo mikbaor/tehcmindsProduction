@@ -1,0 +1,4 @@
+deployments:
+  - destination: "public_html/"
+    repo: "mikbaor/tehcmindsProduction"
+    branch: "main"
