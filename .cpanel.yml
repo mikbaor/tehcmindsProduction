@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/techmind/public_html/
-    - /bin/cp -R index.html style.css $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
