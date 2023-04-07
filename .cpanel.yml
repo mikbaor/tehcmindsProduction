@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/techmind/public_html/
-    - /bin/cp build $DEPLOYPATH
+    - /bin/rsync -av build/ $DEPLOYPATH
