@@ -1,4 +1,5 @@
+---
 deployments:
   - destination: "public_html/"
-    repo: "mikbaor/tehcmindsProduction"
+    repo: "mikbaor/produccionweb"
     branch: "main"
