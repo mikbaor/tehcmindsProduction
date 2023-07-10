@@ -17,10 +17,10 @@ const BlogGridSidebar = () => {
             
             <Layout>
                 <BreadcrumbOne 
-                    title="The Easiest Way To Create Website <br /> Quick Copy & Make site."
+                    title="Juntos Creamos un Mejor Futuro"
                     rootUrl="/"
                     parentUrl="Home"
-                    currentUrl="Blog Grid Sidebar"
+                    currentUrl="Blog"
                 />
                 <div className="main-content">
                     {/* Start Blog Area  */}

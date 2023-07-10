@@ -1,7 +1,7 @@
 import React from 'react'
 import SEO from "../common/SEO";
 import HeaderTopNews from '../common/header/HeaderTopNews';
-import HeaderOne from '../common/header/HeaderOne';
+import HeaderTwo from '../common/header/HeaderTwo';
 import FooterFour from '../common/footer/FooterFour';
 import BrandThree from '../elements/brand/BrandThree';
 import AboutFour from '../elements/about/AboutFour';
@@ -18,7 +18,7 @@ const AboutUs = () => {
             <SEO title="About Us" />
             <main className="page-wrapper">
                 <HeaderTopNews />
-                <HeaderOne btnStyle="btn-small round btn-icon" HeaderSTyle="header-transparent" />
+                <HeaderTwo btnStyle="btn-small round btn-icon" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
                 <div className="slider-area slider-style-1 height-850 bg_image" data-black-overlay="7" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-12.jpg)`}}>

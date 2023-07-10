@@ -31,10 +31,10 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                     <div className="row align-items-center">
                         <div className="col-lg-9 col-md-6 col-4 position-static">
                             <div className="header-left d-flex">
-                                <Logo 
+                                {/* <Logo 
                                     image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
                                     image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
-                                />
+                                /> */}
                                 <nav className="mainmenu-nav d-none d-lg-block">
                                     <Nav />
                                 </nav>
