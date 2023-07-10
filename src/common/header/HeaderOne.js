@@ -26,19 +26,20 @@ const HeaderOne = ({btnStyle, HeaderSTyle}) => {
             <header ref={ref} className={`rn-header header-default ${HeaderSTyle} ${headerClasses}`}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
-                        <div className="col-lg-3 col-md-6 col-4">
-                            <Logo 
+                    <div className="col-lg-3 col-md-6 col-4 d-lg-flex align-items-center justify-content-center">
+                            {/* <Logo 
                                 image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
                                 image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
-                            />
-                        </div>
+                            /> */}
+                            <h4 className="m-0">Techminds</h4>
+                    </div>
                         <div className="col-lg-9 col-md-6 col-8 position-static">
                             <div className="header-right">
                                 <nav className="mainmenu-nav d-none d-lg-block">
                                     <Nav />
                                 </nav>
                                 <div className="header-btn">
-                                    <a className={`btn-default ${btnStyle}`} target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">BUY NOW</a>
+                                    <a className={`btn-default ${btnStyle}`} target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">Agenda una Reunion</a>
                                 </div>
                                 <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div className="hamberger">
