@@ -27,16 +27,18 @@ const Freelancer = () => {
                 <HeaderTwo btnStyle="btn-small" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-png-01.png)`}}>
+                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero.jpg`}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="inner text-start">
-                                    <h1 className="title">Hi there, I am‍ <br /><span className="theme-gradient">Liam Noah!</span></h1>
-                                    <p className="description">I am an outstanding Product Designer from Lagos, Fatima. You will find me smiling almost every time while designing thoughtful products, and experiences that people love and businesses value.</p>
+                                    <h1 className="title">¡Hola, bienvenidos a<br /><span className="theme-gradient">TechMinds!</span></h1>
+                                    <p className="description">
+                                    Somos un equipo de desarrolladores apasionados con sede en Puebla, México. En TechMinds, combinamos la creatividad y la innovación para ofrecer soluciones tecnológicas excepcionales que impulsan el éxito de nuestros clientes.
+                                    </p>
                                     <div className="button-group mt--40 mt_sm--20">
-                                        <Link className="btn-default btn-border" to="#">Click For Hire Me</Link>
-                                        <Link className="btn-default btn-icon" to="#">About Me <i className="icon"><FiArrowRight /></i></Link>
+                                        <Link className="btn-default btn-border" to="contact">Escríbenos</Link>
+                                        <Link className="btn-default btn-icon" to="about-us">Conoce de nosotros<i className="icon"><FiArrowRight /></i></Link>
                                     </div>
                                 </div>
                             </div>

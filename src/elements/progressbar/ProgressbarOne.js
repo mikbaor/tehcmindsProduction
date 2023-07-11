@@ -5,25 +5,31 @@ import Skill from "./Skill";
 const progressData = [
     {
       id: 1,
-      title: "Web Development",
+      title: "Sitios Empresariales WP",
       percantage: 90,
       progressColor: "#059DFF",
     },
     {
       id: 2,
-      title: "Photoshop Design",
+      title: "Sisitios Empresariales SPA",
       percantage: 75,
       progressColor: "#FB5343",
     },
     {
       id: 3,
-      title: "App Development",
+      title: "Automatización",
       percantage: 70,
       progressColor: "#E33FA1",
     },
     {
       id: 4,
-      title: "Application Development",
+      title: "Industria 4.0",
+      percantage: 95,
+      progressColor: "#6549D5",
+    },
+    {
+      id: 4,
+      title: "Instalaciones Seguridad",
       percantage: 95,
       progressColor: "#6549D5",
     },
