@@ -4,24 +4,24 @@ import ScrollAnimation from "react-animate-on-scroll";
 const TimelineData = [
     {
         id: "1",
-        title: "Knowledge",
-        description: "Present all available features in Essentials.",
+        title: "Anlálisis",
+        description: "Escuchamos tu ídea o problemática para identificar los aspectos importantes y críticos.",
     },
     {
         id: "2",
-        title: "Working",
-        description: "All Feature available features in Essentials.",
+        title: "Diseño",
+        description: "Tomando en cuenta el anáñisis previo elegimos las tecnologías a utilizar, diseñamos la arquitectura del proyecto y el arte del mismo.",
     },
     {
         id: "3",
-        title: "Solution",
-        description: "Popular Feature available features in Essentials.",
+        title: "Implementación",
+        description: "Saltamos del papel y nos ponemos manos a la obra con las mejores prácticas y bajo la metodologpias Scrum.",
     },
     {
         id: "4",
-        title: "Process",
-        description: "Latest Feature available features in Essentials.",
-    },
+        title: "Montaje",
+        description: "El proyecto está en línea es hora de utilizarlo y monitorear que todo este funcionando de manera correcta.",
+    }
 ]
 
 const TimelineTwo = ({classVar}) => {

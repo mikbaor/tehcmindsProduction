@@ -10,33 +10,37 @@ const AboutSix = () => {
                 <div className="wrapper theme-shape">
                     <div className="row align-items-center">
                         <div className="col-lg-4 col-md-6 col-12">
-                            <div className="thumbnail text-start text-lg-center">
-                                <img src="./images/about/about-logo.png" alt="About images" />
-                            </div>
+
+                            <picture className="thumbnail text-start text-lg-center">
+                                <source srcSet="./images/about/iot.avif"  type="image/avif" />
+                                <source srcSet="./images/about/iot.webp"  type="image/webp" />
+                                <img loading="lazy" src="./images/about/iot.png" alt="Internet de las cosas" />
+                            </picture>
+
                         </div>
                         <div className="col-lg-8 col-md-6 col-12 mt_sm--30">
                             <div className="inner">
-                                <span className="theme-gradient subtitle">I have completed 50+ project.</span>
-                                <h4 className="color-white maintitle">Have More Projects Complete in My Carreer Life.</h4>
+                                <span className="theme-gradient subtitle">Tenemos una solución Integral para ti.</span>
+                                <h4 className="color-white maintitle">Sitios Web <br/> ERP <br/> Automatización <br/> IoT</h4>
                                 <div className="read-more-btn">
-                                    <Link className="btn-default btn-border" to="#">View More Projects</Link>
+                                    <Link className="btn-default btn-border" to="/portfolio">Ver más Proyectos</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+{/* 
                 <div className="row row--15">
                     <div className="col-lg-12">
                         <div className="rbt-progress-style-1 mt--60">
                             <SectionTitleTwo
-                                Title= "My Working Experience."
+                                Title= "Nuestras Trabajos."
                                 textAlign= "text-start mb--40"
                             />
                             <ProgressbarOne />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
