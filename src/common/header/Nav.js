@@ -4,11 +4,6 @@ import {Link} from "react-router-dom";
 const Nav = () => {
     return (
         <ul className="mainmenu">
-            <li>
-                <Link to="/">
-                    Techminds
-                </Link>
-            </li>
             
             <li>
                 <Link to="/about-us">
