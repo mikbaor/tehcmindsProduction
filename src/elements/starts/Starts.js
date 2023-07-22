@@ -17,7 +17,7 @@ const Starts = ({children }) => {
       };
   return (
     <div className="w-100 h-100">
-        {Array.from({ length: 400 }, (_, index) => {
+        {Array.from({ length: 250 }, (_, index) => {
             const coordenada = generarCoordenadaAleatoria();
             const animacion = generarAnimacionAleatoria({index:index});
             const estiloEstrella = {
