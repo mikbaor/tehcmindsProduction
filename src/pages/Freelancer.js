@@ -19,6 +19,22 @@ import ContactForm from "../elements/contact/ContactForm";
 
 
 const Freelancer = () => {
+
+    const generarCoordenadaAleatoria = () => {
+        return {
+          x: Math.random() * 100, // Valor entre 0 y 100
+          y: Math.random() * 100, // Valor entre 0 y 100
+        };
+      };
+    
+      const generarAnimacionAleatoria = ({index}) => {
+        const duracionAleatoria = [3, 7, 11,17,23,27,31];
+        const duracionIndex = Math.floor(Math.random() * duracionAleatoria.length);
+        const duracion = duracionAleatoria[duracionIndex];
+        const anim = index % 2 === 0 ? `destelloAnim-2` : `destelloAnim`;
+        console.log(anim)
+        return `${anim} ${duracion}s infinite ease-in`;
+      };
     return (
         <>
             <SEO title="Freelancer" />
@@ -27,7 +43,25 @@ const Freelancer = () => {
                 <HeaderTwo btnStyle="btn-small" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero.jpg`}}>
+                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" >
+                {Array.from({ length: 400 }, (_, index) => {
+        const coordenada = generarCoordenadaAleatoria();
+        const animacion = generarAnimacionAleatoria({index:index});
+        const estiloEstrella = {
+          position: 'absolute',
+          top: `${coordenada.y}%`,
+          left: `${coordenada.x}%`,
+          width: '2px',
+          height: '2px',
+          backgroundColor: '#fff',
+          opacity: 0.7,
+          borderRadius: '50%',
+          pointerEvents: 'none',
+          animation: animacion,
+        };
+
+        return <div key={index} style={estiloEstrella} className="estrella"></div>;
+      })}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
@@ -65,7 +99,7 @@ const Freelancer = () => {
                         <div className="row">
                             <div className="col-lg-12 mb--10">
                                 <SectionTitleTwo
-                                    Title= "My Recent Works."
+                                    Title= "Nuestros Últimos Word Press"
                                     textAlign= "text-start"
                                 />
                             </div>
