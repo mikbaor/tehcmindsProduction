@@ -4,13 +4,6 @@ import { FiX, FiArrowRight } from "react-icons/fi";
 const HeaderTopNews = () => {
   const [deactive, setClass] = useState("");
 
-  const handleClick = () => {
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${2226622778}&text=${encodeURIComponent(
-      "Tengo en mente un proyecto para mi negocio"
-    )}`;
-    window.open(whatsappUrl, "_blank");
-  };
-
   return (
     <div className={`header-top-news bg_image ${deactive}`}>
       <div className="wrapper">
@@ -26,7 +19,7 @@ const HeaderTopNews = () => {
                   </span>
                 </div>
                 <div className="content">
-                  <button className="btn btn-default" style={{ marginLeft: "20px" }} onClick={handleClick}>
+                  <button className="btn btn-default" style={{ marginLeft: "20px" }}>
                     <span className="cursor-pointer">
                       Quiero estar Online <FiArrowRight />
                     </span>
