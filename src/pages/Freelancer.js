@@ -14,54 +14,22 @@ import BrandThree from "../elements/brand/BrandThree";
 import TimelineTwo from "../elements/timeline/TimelineTwo";
 import TestimonialOne from "../elements/testimonial/TestimonialOne";
 import ContactForm from "../elements/contact/ContactForm";
-
+import handleWhatssApp from '../helpers/buttons';
+import Starts from '../elements/starts/Starts';
 
 
 
 const Freelancer = () => {
-
-    const generarCoordenadaAleatoria = () => {
-        return {
-          x: Math.random() * 100, // Valor entre 0 y 100
-          y: Math.random() * 100, // Valor entre 0 y 100
-        };
-      };
-    
-      const generarAnimacionAleatoria = ({index}) => {
-        const duracionAleatoria = [3, 7, 11,17,23,27,31];
-        const duracionIndex = Math.floor(Math.random() * duracionAleatoria.length);
-        const duracion = duracionAleatoria[duracionIndex];
-        const anim = index % 2 === 0 ? `destelloAnim-2` : `destelloAnim`;
-        console.log(anim)
-        return `${anim} ${duracion}s infinite ease-in`;
-      };
     return (
         <>
             <SEO title="Freelancer" />
             <main className="page-wrapper">
-                <HeaderTopNews />
+                {/* <HeaderTopNews /> */}
                 <HeaderTwo btnStyle="btn-small" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider area  */}
                 <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" >
-                {Array.from({ length: 400 }, (_, index) => {
-        const coordenada = generarCoordenadaAleatoria();
-        const animacion = generarAnimacionAleatoria({index:index});
-        const estiloEstrella = {
-          position: 'absolute',
-          top: `${coordenada.y}%`,
-          left: `${coordenada.x}%`,
-          width: '2px',
-          height: '2px',
-          backgroundColor: '#fff',
-          opacity: 0.7,
-          borderRadius: '50%',
-          pointerEvents: 'none',
-          animation: animacion,
-        };
-
-        return <div key={index} style={estiloEstrella} className="estrella"></div>;
-      })}
+                    <Starts>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
@@ -71,13 +39,14 @@ const Freelancer = () => {
                                     Somos un equipo de desarrolladores apasionados con sede en Puebla, México. En TechMinds, combinamos la creatividad y la innovación para ofrecer soluciones tecnológicas excepcionales que impulsan el éxito de nuestros clientes.
                                     </p>
                                     <div className="button-group mt--40 mt_sm--20">
-                                        <Link className="btn-default btn-border" to="contact">Escríbenos</Link>
+                                        <Link className="btn-default btn-border" onClick={e => handleWhatssApp()} to="#">Escríbenos</Link>
                                         <Link className="btn-default btn-icon" to="about-us">Conoce de nosotros<i className="icon"><FiArrowRight /></i></Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </Starts>
                 </div>
                 {/* End Slider area  */}
 
@@ -119,7 +88,7 @@ const Freelancer = () => {
                         <div className="row">
                             <div className="col-lg-12 mb--40">
                                 <SectionTitleTwo
-                                    Title= "My Pricing Plan."
+                                    Title= "Nuestros Precios."
                                     textAlign= "text-start"
                                 />
                             </div>
@@ -144,7 +113,7 @@ const Freelancer = () => {
 
 
                 {/* Start Elements Area  */}
-                <div className="rwt-testimonial-area rn-section-gapBottom">
+                {/* <div className="rwt-testimonial-area rn-section-gapBottom">
                     <div className="container">
                         <div className="row mb--20">
                             <div className="col-lg-12">
@@ -156,11 +125,11 @@ const Freelancer = () => {
                         </div>
                         <TestimonialOne column="col-lg-4 col-md-6 col-12" teamStyle="card-style-default testimonial-style-one style-two border-gradient" />
                     </div>
-                </div>
+                </div> */}
                 {/* End Elements Area  */}
 
 
-                <div className="contact-area rn-section-gapBottom">
+                {/* <div className="contact-area rn-section-gapBottom">
                     <div className="container">
                         <div className="row mb--20">
                             <div className="col-lg-12">
@@ -181,7 +150,7 @@ const Freelancer = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <CopyrightTwo />
             </main>
             <ScrollTop />
