@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from "../../elements/logo/Logo";
 import Nav from './Nav';
 import { FiX } from "react-icons/fi";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const MobileMenu = ({show, onClose}) => {
     var elements = document.querySelectorAll('.popup-mobile-menu .has-droupdown > a');
@@ -27,10 +28,13 @@ const MobileMenu = ({show, onClose}) => {
         <div className={`popup-mobile-menu ${show ? "active": ""}`}>
             <div className="inner">
                 <div className="header-top">
-                    <Logo 
-                        image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
-                        image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
-                    />
+                        <Link to="/">
+                                <picture>
+                                    <source srcSet="./images/logo-nav.avif" type="image/avif" />
+                                    <source srcSet="./images/logo-nav.webp"  type="image/webp" />
+                                    <img loading="lazy" src="./images/logo-nav.png"  alt="Logo" className='img-fluid p-4' style={{ width: '200px' }} />
+                                </picture>
+                        </Link>
                     <div className="close-menu">
                         <span className="close-button" onClick={onClose}><FiX /></span>
                     </div>

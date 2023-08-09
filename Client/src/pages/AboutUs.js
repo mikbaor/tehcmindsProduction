@@ -11,29 +11,32 @@ import CounterUpFour from "../elements/counterup/CounterUpFour";
 import TeamFour from "../elements/team/TeamFour";
 import TimelineTwo from "../elements/timeline/TimelineTwo";
 import Separator from "../elements/separator/Separator";
+import Starts from '../elements/starts/Starts';
 
 const AboutUs = () => {
     return (
         <>
             <SEO title="About Us" />
             <main className="page-wrapper">
-                <HeaderTopNews />
+                {/* <HeaderTopNews /> */}
                 <HeaderTwo btnStyle="btn-small round btn-icon" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider Area  */}
-                <div className="slider-area slider-style-1 height-850 bg_image" data-black-overlay="7" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-image-12.jpg)`}}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner pt--80 text-center">
-                                    <div>
-                                        <h3 className="rn-sub-badge"><span className="theme-gradient">Our Company's About Details.</span></h3>
+                <div className="slider-area slider-style-1 height-850 bg_image" data-black-overlay="7" >
+                    <Starts>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="inner pt--80 text-center">
+                                        <div>
+                                            <h3 className="rn-sub-badge"><span className="theme-gradient">Un Poco de Nuestra Compañía.</span></h3>
+                                        </div>
+                                        <h1 className="title display-one">Somos Especialistas <br /> en Tecnología.</h1>
                                     </div>
-                                    <h1 className="title display-one">We are a Corporate <br /> Business Agency.</h1>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Starts>
                 </div>
                 {/* End Slider Area  */}
 
@@ -44,11 +47,17 @@ const AboutUs = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="content">
-                                    <h3 className="title">We are creative digital agency working for our company brands.</h3>
+                                    <h3 className="title">Nuestro equipo de desarrollo está listo para superar los límites.</h3>
                                 </div>
                             </div>
                             <div className="col-lg-6">
-                                <p className="mb--10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Ullam accusantium dignissimos repellendus nemo fugiat numquam, nisi odio adipisci. Veniam neque itaque expedita officiis rem ipsa! Ratione, rem reiciendis?</p>
+                                <p className="mb--10">
+                                    ¿Hás pensado como puedes utilizar el Internet a tu favor?
+                                    <br/>
+                                    En Techminds, nos apasiona la tecnología y su potencial para transformar tu negocio. ¿Te has preguntado cómo el Internet puede trabajar a tu favor? Te invitamos a explorar las maravillas de la Internet de las cosas (IoT), la rastreabilidad y la Industria 5.0. Y eso no es todo, también integramos robots con bases de datos para optimizar tus procesos. Imagina cómo esto puede impulsar tu eficiencia y rendimiento.
+
+Nuestra misión es ofrecerte soluciones a medida, adaptadas a tus necesidades específicas. Queremos ayudarte a destacar en un mundo cada vez más conectado. Juntos, crearemos una estrategia tecnológica que te llevará hacia un futuro brillante. Así que, ¿estás listo para sumergirte en esta emocionante travesía hacia el éxito? ¡Nos encantaría ser tu compañero tecnológico y trabajar contigo para alcanzar tus objetivos!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -80,8 +89,8 @@ const AboutUs = () => {
                                 <SectionTitle
                                     textAlign = "text-center"
                                     radiusRounded = ""
-                                    subtitle = "What we can do for you"
-                                    title = "Services provide for you."
+                                    subtitle = "En Que Podemos Ayudarte"
+                                    title = "Servicios que tenemos para ti."
                                     description = "There are many variations of passages of Lorem Ipsum available, <br /> but the majority have suffered alteration."
                                     />
                             </div>
